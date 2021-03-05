@@ -1,0 +1,339 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Andrey Zhukov}\\\medskip % Your name
+
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\educationentry{2015 -- 2020}
+	{Doctor of Philosophy}
+	{}
+	{}
+	{}
+	
+	
+	\educationentry{}
+	{{\normalfont \textsc{\small{Economics}}}} % Degree
+	%{} % Honours, achievements or distinctions (e.g. first class honours)
+	{} % Department
+	{} % Institution
+	{Aalto University, Espoo, Finland}
+	
+	
+	
+	\educationentry{2016 -- 2017} % Duration
+	{Visiting Scholar} % Degree
+	%{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Economics} % Department
+	{}
+	{Kellogg School of Management, Illinois, USA}
+	%------------------------------------------------
+	
+	\educationentry{2012--2015} % Duration
+	{Master of Social Science} % Degree
+	%{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Economics} % Department
+	{Magna cum laude}
+	{University of Helsinki, Helsinki, Finland} % Institution
+	
+	%------------------------------------------------
+	
+	\educationentry{2008--2012} % Duration
+	{Bachelor of Economics} % Degree
+	%} % Honours, achievements or distinctions (e.g. first class honours)
+	%{Department of Physics} % Department
+	{}
+	{Diploma with distinction}
+	{Tula State University, Tula, Russia} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Research}
+
+{\raggedright\textbf{``Endogenous Information in Markets"}\\\medskip}
+
+In my \href{https://github.com/anzhukov3/Doctoral-research}{doctoral dissertation}, I apply game-theoretic tools to analyze multi-armed bandit problems and dynamic incentives of economic decision-makers. \\
+
+{\raggedright\textbf{``Information Aggregation in Betting Markets"}\\\medskip}
+
+I investigate whether some bookmakers are consistently better than others at probabilistic forecasts on the outcomes of soccer matches. As an example, my \href{https://github.com/anzhukov3/SoccerBetting}{``SoccerBetting"} project compares forecasts of experts from \href{https://projects.fivethirtyeight.com/soccer-predictions/matches/}{538} and \href{https://www.pinnacle.bet/en/soccer/matchups/highlights}{Pinnacle sportsbook}.  \vspace{5pt}
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Dr. Pauli Murto}}{spaceafter}
+	\tableentry{Position}{Associate Professor}{}
+	\tableentry{Employer}{\href{http://hse-econ.fi/murto/}{Department of Economics}, \href{https://www.aalto.fi/en/school-of-business}{\textit{Aalto University}}}{}
+	\tableentry{Phone}{+358 40 353 8174}{}
+	\tableentry{Email}{\href{mailto:pauli.murto@aalto.fi}{pauli.murto@aalto.fi}}{}
+	
+	%------------------------------------------------
+	
+	\tableentry{}{}{} % Creates some additional whitespace between the references
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Dr. Juuso Välimäki}}{spaceafter}
+	\tableentry{Position}{Professor}{}
+	\tableentry{Employer}{\href{http://hse-econ.fi/valimaki/}{Department of Economics, \href{https://www.aalto.fi/en/school-of-business}{\textit{Aalto University}}}}{}
+	\tableentry{Phone}{+358 40 353 8182}{}
+	\tableentry{Email}{\href{mailto:juuso.valimaki@aalto.fi}{juuso.valimaki@aalto.fi}}{}
+
+
+
+	%------------------------------------------------
+	
+\end{supertabular}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+		    \raisebox{0pt}{\small\faEnvelope} & \href{mailto:anzhukov3@gmail.com}{anzhukov3@gmail.com} \\ % Email address
+		    \raisebox{-1pt}{\faGithub} & \href{https://github.com/anzhukov3}{https://github.com/anzhukov3} \\ % GitHub profile
+		    \raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/andrey-zhukov-b5627086/}{My LinkedIn}\\
+		    \raisebox{-1pt}{\faPhone} & +358 405 125 262 \\ % Phone number
+			\raisebox{-1pt}{\faHome} & 061 T{\"a}hk{\"a}kuja 5E, Vantaa, 01370  \\ % Address
+			%\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\workposition{} % Duration
+{Current, from June 2020}
+{\textbf{Rovio Entertainment}\hfill \textsc{Data Analyst}} % Employer
+ {}% Job title
+{I am developing models to forecast the profitability of user acquisition investment, maintain data pipelines and dashboards driving decision-making of performance marketing managers.}
+
+\workposition{} % Duration
+{Jan 2015 -- Dec 2020}
+{\textbf{Aalto University} \hfill \textsc{PhD Candidate}} % Employer
+{} % Job title
+{I conduct doctoral research and assist with teaching a wide range of empirical and theoretical courses. In particular, I was a teaching assistant for undergraduate courses in Environmental Economics, International Trade and Personnel Economics. I was also teaching doctoral courses in Game Theory and Economics of Information.} % Description
+
+%------------------------------------------------
+
+\workposition{} % Duration
+{Summer 2014} % FT/PT (full time or part time)
+{\textbf{VATT} \hfill \textsc{Research Assistant}} % Employer
+{} % Job title
+{I studied immigrants' settlement patterns in the Helsinki metropolitan area, completed my Master's thesis documenting dynamics of ethnic segregation in Finland, and developed versatile web applications  for data visualization using R Shiny: \href{https://anzhukov.shinyapps.io/Maps/}{{\color[rgb]{0,0,1} Application 1}} and \href{https://anzhukov.shinyapps.io/Diss/}{{\color[rgb]{0,0,1} Application 2}}.}  % Description
+
+%------------------------------------------------
+
+\workposition{} % Duration
+{Nov 2013 -- May 2014} % FT/PT (full time or part time)
+{\textbf{Statistics Finland} \hfill \textsc{Thesis Trainee}} % Employer
+{} % Job title
+{I prepared a report  on the impact of the change in the car purchase tax on a variety of outcomes such as market shares and emission rates.} % Description
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Tools} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+
+	
+	%------------------------------------------------
+	
+	\tableentry{}{R, SQL, git, Python, Hive, Presto, Amazon EMR,}{spaceafter}
+	\tableentry{}{RShiny, Jupyter}{spaceafter}
+		%------------------------------------------------
+		%------------------------------------------------
+	
+	%------------------------------------------------
+	
+
+\end{supertabular}
+
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\section{Conferences}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	\tableentry{Aug 2019}{Summer School of Econometric Society}{}
+	\tableentry{}{in Economic Theory, Sapporo, Japan}{}
+	\tableentry{Feb 2018}{KT-päivat, Turku, Finland}{}
+	%------------------------------------------------
+	%\tableentry{Jan 2017}{American Economic Association meeting}{}
+	%\tableentry{}{Chicago, USA}{}
+	%------------------------------------------------
+	
+
+	%------------------------------------------------
+	
+\end{supertabular}
+
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
